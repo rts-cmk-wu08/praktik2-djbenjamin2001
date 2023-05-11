@@ -1,9 +1,14 @@
 import Link from "next/link";
 
-const Navigation = () => {
+const Navigation = ({footer}) => {
     return (
-        <nav className="flex ml-auto ">
-            <ul className="flex gap-2 mt-[2rem]">
+        <nav className={`flex ml-auto justify-center`}>
+           
+            <ul className={`flex  gap-2 mt-[2rem] ${footer?"flex-col  mb-[5rem] ": "flex-row"}`}> 
+            {footer?(
+              <p className='text-2xl font-bold'>Quick links</p>
+                ): ""}
+              
                 <li>
                   <Link href={"/"}>Boliger til salg</Link>  
                 </li>
@@ -16,6 +21,7 @@ const Navigation = () => {
                 <li>
                   <Link href={"/"}>Kontakt os</Link>  
                 </li>
+               
             </ul>
         </nav>
       );
