@@ -6,7 +6,7 @@ const getHomecount = async() =>{
   }
 const Udvalgtbolig = async() => {
     const homeCount = await getHomecount()
-  console.log(homeCount)
+  
     return ( <>
      <section className='bg-[#F8F8FB]  '>
   <div className='w-[35rem] text-center  mx-auto pt-[3.5rem]'>
@@ -17,7 +17,7 @@ const Udvalgtbolig = async() => {
  <ul className='grid grid-cols-2 '>  
   {homeCount.map(homecounts =>( 
   <li  className='p-5 ' > 
- <Image src={homecounts.images[0].url} width={homecounts.images[0].width} height={homecounts.images[0].height}></Image>
+ <Image className="object-cover w-[1400px]  h-60 " src={homecounts.images[0].url} width={homecounts.images[0].width} height={homecounts.images[0].height}></Image>
  <article className='bg-white space-y-4 p-2'>
 <h1 className='font-bold text-xl'>{homecounts.adress1}</h1>
 <p>{homecounts.postalcode} {homecounts.city}</p>
