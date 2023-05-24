@@ -10,7 +10,7 @@ const Navigation = ({footer}) => {
                 ): ""}
               
                 <li>
-                  <Link href={"/"}>Boliger til salg</Link>  
+                  <Link href={"boligside"}>Boliger til salg</Link>  
                 </li>
                 <li>
                   <Link href={"/"}>Mæglere</Link>  

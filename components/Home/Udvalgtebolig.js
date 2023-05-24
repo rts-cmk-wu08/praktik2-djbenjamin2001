@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const getHomecount = async() =>{
     const result = await fetch("https://dinmaegler.onrender.com/homes?_limit=4&_start=0")
     if(!result.ok) {throw new Error("failed to fetch data");}
@@ -30,7 +31,7 @@ const Udvalgtbolig = async() => {
 </article>
 </li>))}</ul>
 <div className='flex justify-center mb-[5rem]'>
-<button className='bg-blue text-white p-3 w-[10rem] mx-auto'>vis alle boliger</button>
+<Link href={"boligside"}><button className='bg-blue text-white p-3 w-[10rem] mx-auto'>vis alle boliger</button></Link>
 </div>
  </section>
     </> );
