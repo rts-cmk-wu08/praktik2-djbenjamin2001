@@ -2,15 +2,24 @@
 
 
 
-
+import { useSearchParams } from 'next/navigation';
 import { useState } from "react"
 import { formatter } from "@/helpers/Currency"
+
+
+
 
 export default function FilterForm() {
 	const [max, setMax] = useState(8000000)
 	const [min, setMin] = useState(0)
+// const handleChange = (event) =>{
 
-	return (
+// console.log(event.currentTarget)
+//  event.currentTarget.submit()
+// }
+	return   (
+		<>
+		
 		<form>
 			<div className="flex flex-col">
 				<label className="flex flex-col">
@@ -27,6 +36,7 @@ export default function FilterForm() {
 				<label className="flex flex-col">
 					min Pris
 				<select name="type_eq" id="type_eq">
+				
 				<option value="Villa">villa</option>
 				<option value="Ejerlejlighed">ejerlejlighed</option>
 				<option value="Byhus">byhus</option>
@@ -35,6 +45,7 @@ export default function FilterForm() {
 			</div>
 			<button type="submit">Filtrer</button>
 		</form>
+		</>
 	)
   }
 /*const Boligslider = () => { async function submitHandler(e) {
