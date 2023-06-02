@@ -16,7 +16,6 @@ const Home = async() =>{
 <Nyhedsbrev/>
 <Workers/>
 <App/>
-
     </main>
      
     </>
