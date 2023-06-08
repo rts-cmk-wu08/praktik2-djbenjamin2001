@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Image from "next/image";
 import {IoIosMail} from "react-icons/io"
 import {FaLinkedinIn} from "react-icons/fa"
@@ -31,7 +33,7 @@ const Workers = async() => {
 
 </li>))}</ul>
 <div className='flex justify-center mb-[5rem]'>
-<button className='bg-blue text-white p-3 w-[10rem] mx-auto'>se alle mæglere</button>
+<Link href={"meglere"}><button className='bg-blue text-white p-3 w-[10rem] mx-auto'>se alle mæglere</button></Link>
 </div>
  </section>
     </> );
