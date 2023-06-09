@@ -19,7 +19,7 @@ const Navigation = ({footer}) => {
                   <Link href={"/"}>Mine favoritter</Link>  
                 </li>
                 <li>
-                  <Link href={"/"}>Kontakt os</Link>  
+                  <Link href={"kontaktside"}>Kontakt os</Link>  
                 </li>
                
             </ul>
