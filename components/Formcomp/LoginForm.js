@@ -1,28 +1,18 @@
 "use client"
 import MeglerId from '@/app/meglere/[meglereId]/page';
 import {Formik,Field, Form, ErrorMessage} from 'formik';
-import * as yup from 'yup';
+import { Schema } from './formSchema';
 
 
 const LoginForm = () => {
 
-    let schema = yup.object().shape({
-        email:yup.string().email("write your email correctly please").required("Email is required"),
-         password: yup
-         .string()
-         .required('Please enter your password.')
-        .min(6, 'Your password is too short.').required("write your password"),
-         confirmPassword: yup
-         .string()
-         .required('Please retype your password.')
-         .oneOf([yup.ref("password")], 'Your passwords do not match.')
-    })
+ 
 return ( <div className='flex flex-col'>
         
         <Formik  initialValues={{
             email:"",
             password:"",
-        }} validationSchema={schema}
+        }} validationSchema={Schema}
          onSubmit={(values, {resetForm}) => {
             //axiospost here....
             console.log(values)
