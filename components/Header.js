@@ -11,7 +11,7 @@ const Header = () => {
 <FaPaperPlane /><p>4000@dinmaegler.com</p>
 <BsTelephoneFill /><p>+45 7070 4000</p></div>
 <div className='flex justify-items-end '>
-<FaUser /><Link  href={"/"}>Log ind</Link>
+<FaUser /><Link  href={"loginside"}>Log ind</Link>
  </div>
         </section>
       <header className='flex p-[1rem] bg-white'>
