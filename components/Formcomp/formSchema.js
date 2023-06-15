@@ -13,3 +13,11 @@ export const Schema = yup.object().shape({
     // .required('Please retype your password.')
     // .oneOf([yup.ref("password")], 'Your passwords do not match.')
 })
+
+export const LoginSchema = yup.object().shape({
+    email:yup.string().email("write your email correctly please").required("Email is required"),
+     password: yup
+     .string()
+     .required('Please enter your password.')
+    .min(6, 'Your password is too short.').required("write your password")
+})

@@ -4,18 +4,18 @@ import Navigation from './Navigation';
 import {BsTelephoneFill} from 'react-icons/bs'
 import {FaPaperPlane} from 'react-icons/fa'
 import {IoLocationSharp} from 'react-icons/io5'
-
+import Image from 'next/image';
 const Footer = () => {
     return ( <>
         <footer  className='pl-[2rem] relative'>
-            <div className='flex mt-[5rem] '>
-       <BsHouses className=' text-blue text-[5rem]'/> <p className='flex mt-[3rem] text-[1.5rem] text-blue'>DIN MÆGLER</p></div>
+           
+      <Image className='mt-[3rem] mb-[1rem]' src="/maegler.png" width={296} height={89} alt='sitelogo'></Image>
 <p className=' w-[50rem] '>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
 
        
 
         <Navigation footer />
-       <section className='flex flex-col bg-white w-[25rem] left-[5rem] h-[25rem] top-40 absolute p-[2.5rem] shadow-xl space-y-5'>
+       <section className='flex flex-col bg-white w-[25rem] left-[5rem] h-[25rem]   top-32 absolute p-[2.5rem] shadow-xl space-y-5'>
                     <div className='flex flex-row p-[1rem]  '>
 <FaPaperPlane/><p>+45 7070 4000</p></div> 
 <div className='flex flex-row p-[1rem]'>
