@@ -31,7 +31,7 @@ console.log(theme)
 <BsTelephoneFill /><p>+45 7070 4000</p></div>
 <div className='flex justify-items-end '>
  
-<FaUser />{theme ? <Link href={"logouthelper"}> <p>{theme.name}</p>  log out</Link> : <Link  href={"loginside"}>Log ind</Link>  }
+<FaUser />{theme ? <Link href={"logouthelper"}>log out</Link> : <Link  href={"loginside"}>Log ind</Link>  }
  </div>
         </section>
       <header className='flex p-[1.5rem] px-[5rem] bg-white'>
