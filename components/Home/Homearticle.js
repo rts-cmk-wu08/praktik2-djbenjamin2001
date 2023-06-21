@@ -2,7 +2,7 @@ import Image from "next/image";
 const HomeArticle = () => {
     return ( <>
           <section className='flex space-x-8 justify-center p-[5rem]'>
-    <Image src="/family.png"   width={477} height={402} alt=''></Image> 
+    <Image src="/family.png"   width={477} height={402} alt='homearticle'></Image> 
     <article className='flex flex-col  w-[30rem] space-y-8'>
 <h2  className='font-bold text-blue text-3xl '>Vi har fulgt danskerne hjem i snart 4 årtier</h2>
 <p className='text-blue text-xl font-bold'>Det synes vi siger noget om os!</p>

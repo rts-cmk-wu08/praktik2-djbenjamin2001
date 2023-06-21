@@ -115,7 +115,7 @@ const AlbumDetail = async ({ params: { boligId } }) => {
             <p className="w-[25rem] text-clip">{details.description}</p>
           </div>
           <div className="flex p-[5rem] mt-[5rem] ">
-          <Image src={details.agent.image.url} width={450} height={280}></Image>
+          <Image src={details.agent.image.url} width={450} height={280} alt="agent"></Image>
           <div className=" space-y-10   pl-[2rem]">
           <p>{details.agent.name}</p>
           <p className=" text-gray-400">{details.agent.title}</p>

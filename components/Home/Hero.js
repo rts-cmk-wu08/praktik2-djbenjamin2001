@@ -2,7 +2,7 @@ import Image from "next/image";
 const Hero = () => {
     return (<>
         <div className='bg-black'>
-        <Image src="/heroImg.png" className='relative  bg-yellow-500 opacity-40'  width={1920} height={1080} alt=''></Image></div>
+        <Image src="/heroImg.png" className='relative  bg-yellow-500 opacity-40'  width={1920} height={1080} alt='hero'></Image></div>
         <section className=' absolute   bottom-40 left-0 w-[100%] space-y-3'>
         <h1 className='  text-white text-center text-5xl '>Søg efter din drømmebolig</h1>
         <div className='bg-white mx-[20rem]  p-[2rem] text-blue '>
