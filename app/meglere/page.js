@@ -30,7 +30,7 @@ const Meglere = async({searchParams}) => {
  </div> 
  <ul className='grid grid-cols-3 '>  
   {workerCount.map(meglere =>( 
-  <li  className='p-5 ' > 
+  <li key={meglere.id} className='p-5 ' > 
 <Link href={`/meglere/${meglere.id}`}> <Image src={meglere.image.url}  width={meglere.image.width} height={meglere.image.height} alt="workerimages"></Image></Link>
  <article className='bg-white space-y-5 pb-[2rem] pt-5 text-center '>
 <p className="font-bold text-lg">{meglere.name}</p>

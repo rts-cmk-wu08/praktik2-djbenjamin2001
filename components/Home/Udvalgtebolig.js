@@ -17,7 +17,7 @@ const Udvalgtbolig = async() => {
  </div> 
  <ul className='grid grid-cols-2 '>  
   {homeCount.map(homecounts =>( 
-  <li  className='p-5 ' > 
+  <li key={homecounts.id} className='p-5 ' > 
  <Image className="object-cover w-[1400px]  h-60 "  src={homecounts.images[0].url} width={homecounts.images[0].width} height={homecounts.images[0].height} alt="homeimages"></Image>
  <article className='bg-white space-y-4 p-2'>
 <h1 className='font-bold text-xl'>{homecounts.adress1}</h1>

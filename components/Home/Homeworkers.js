@@ -20,7 +20,7 @@ const Workers = async() => {
  </div> 
  <ul className='grid grid-cols-3 '>  
   {workerCount.map(workercounts =>( 
-  <li  className='p-5 ' > 
+  <li key={workercounts.id}  className='p-5 ' > 
  <Image src={workercounts.agent.image.url} width={workercounts.agent.image.width} height={workercounts.agent.image.height} alt="agents"></Image>
  <article className='bg-white space-y-5 pb-[2rem] pt-5 text-center '>
 <p className="font-bold text-lg">{workercounts.agent.name}</p>

@@ -43,10 +43,10 @@ const AlbumDetail = async ({ params: { boligId } }) => {
         <SRLWrapper options={options}>
           {details.images.map((image, index)=> (
             /* skal lave classname hidden når index number typerne  ikke er 0*/
-             <a className={
+             <a key={image.id} className={
               index === 0 ? "" : "hidden"
              } href={image.url}>
-             <Image
+             <Image 
                src={image.url}
                width={1920}
                height={1080}
