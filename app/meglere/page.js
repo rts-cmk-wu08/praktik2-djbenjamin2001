@@ -18,7 +18,7 @@ const Meglere = async({searchParams}) => {
     
     <>
  <div className='bg-black'>
-        <Image src="/banner.png" className='relative  bg-yellow-500 opacity-40' alt="workers" width={1920} height={1080} ></Image></div>
+        <Image src="/banner.png" className='relative  bg-yellow-500 opacity-40'  width={1920} height={1080} alt="workers"></Image></div>
         <section className=' absolute  top-52 left-0 w-[100%] space-y-3'>
         <h1 className='  text-white text-center font-bold text-5xl '>Medarbejdere i Roskilde</h1>
         </section>
@@ -31,7 +31,7 @@ const Meglere = async({searchParams}) => {
  <ul className='grid grid-cols-3 '>  
   {workerCount.map(meglere =>( 
   <li  className='p-5 ' > 
-<Link href={`/meglere/${meglere.id}`}> <Image src={meglere.image.url} alt="workers" width={meglere.image.width} height={meglere.image.height}></Image></Link>
+<Link href={`/meglere/${meglere.id}`}> <Image src={meglere.image.url}  width={meglere.image.width} height={meglere.image.height} alt="workerimages"></Image></Link>
  <article className='bg-white space-y-5 pb-[2rem] pt-5 text-center '>
 <p className="font-bold text-lg">{meglere.name}</p>
 <p className="text-gray-300">{meglere.title}</p>

@@ -38,7 +38,7 @@ const MeglerId = async ({ params: { meglereId } }) => {
             src={workerdetails.image.url}
             width={workerdetails.image.width}
             height={workerdetails.image.height}
-            alt="worker picture"
+            alt="workerpicture"
           ></Image>
           <div className="flex-col space-y-5 pl-5">
             <p className="font-bold text-lg">{workerdetails.name}</p>
